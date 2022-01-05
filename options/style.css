@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(237, 254, 255, 0.568);
+    color: rgb(24, 158, 230);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: background .5s, height .5s;
+    opacity: 1;
+}
+.nav.active {
+    background: white;
+    color: black;
+    height: 50px;
+    opacity: .8;
+}
+
+.nav-title {
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    color: yellow;
+    text-shadow: 1px 0px 1px blue;
+}
+.nav-title.active {
+    color:black;
+}
+
+.nav-list {
+    margin-right: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+}
+.nav-item.break:after {
+    content:'';
+    width: 1px;
+    height:20px;
+    background: rgb(189, 189, 189);
+    position: absolute;
+    top: 3px;
+    right: -22px;
+}
+
+.nav-item:hover {
+    opacity: 0.7
+}
+
+.nav-item.active {
+    color: red;
+}
+
+
+
+.img_content {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://a-static.besthdwallpaper.com/anime-girl-va-buom-hinh-nen-3000x2000-26669_42.jpg);
+    filter:opacity(0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    position: relative;
+    top: 40%;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+normal {
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 45%;
+    font-size: 50px;
+    text-shadow: 12px 0px 10px rgb(10, 160, 214)
+                 ,12px 0px 10px rgb(10, 160, 214)
+                 ,12px 0px 10px black;
+    width: 30%;
+    text-align: center;
+}
+
+.box_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(170, 212, 218);
+}
+
+.box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(39, 39, 39);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    width: inherit;
+    height: inherit;
+}
+
+.main.active {
+    display: block;
+    animation: transitionin 0.72s;
+}
+
+@keyframes transitionin {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+

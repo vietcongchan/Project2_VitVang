@@ -1,0 +1,51 @@
+.tools-main {
+    background-image: url(https://img2.thuthuatphanmem.vn/uploads/2018/12/30/background-dep-ppt_110341618.jpg);
+    width: 100%;
+    height: 800vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.tools-container{
+    padding: 50px;
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tools-container span {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.tool-items {
+    margin: 20px 0px;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 3px solid black;
+}
+
+.tool-items p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#tools-text {
+    font-size: 20px;
+    text-align: start;
+}
+
+.tools-img {
+    width: 70%;
+    margin: 20px;
+}
+
+.tool-items {
+    font-size: 30px;
+}
